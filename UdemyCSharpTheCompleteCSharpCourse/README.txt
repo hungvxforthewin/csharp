@@ -9,6 +9,7 @@ SECSION 1: THE FUNDAMENTALS OF C# PART 1
         /// -IDE, key word
 		/// -Base object
 		/// -New <Từ khóa rất hay>
+	 	/// -This
         /// -Variables
         /// -Datatypes: note var
         /// -Loops: if else, switch case break, continue, for, while, do while, foreach
@@ -183,4 +184,53 @@ public int A
 -Systax 
 #region-clear code
 #endregion
-73.74.Summary and quiz
+73.Summary and quiz
+
+SECSION 4: Object-oriented Programming PART 2
+
+74.Introduction
++More classes
++Namespace
++Struct
++Enum
++This keyword
++Interface
+75.Sealed Classes
+-Không cho kế thừa
+76.Static class
+-Không cho khởi tạo đối tượng
+77.Nested Classes
+-Class lồng nhau, chứa class
+78.Partial Classes
+-Chia thành nhiều class nhưng có thể gộp vào chung 1 class --> using partial class
+79.NameSpace
+-Tên vùng làm việc
+80.Struct
+81.Class vs Struct
+82.Enums
+-Vừa lấy đc giá trị cũng như index
+83.84.85: VD
+86.This Keyword
+87.Interface
+-Lớp dẫn xuất thực hiện đầy đử các method	
+88.Interface vs abstract class
+-interface:
++Cho phép đa kế thừa
++Có chứa biến
++Không thể access modifier, everything public
++Không có body method;
+-abstract
++Ko cho đa kế thừa
++ko chứa biến
++Cho phép access modifier
++Có body method
+89.Exception Handing
+try catch finally
+90.Exception Handing ex
+91.Composition
+92.Aggregation
+93.Association
+94.BT
+95.Summary + Quiz
+
+
