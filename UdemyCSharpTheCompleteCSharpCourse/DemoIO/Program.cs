@@ -38,7 +38,8 @@ namespace DemoIO
             {
                 Console.WriteLine(Path.GetFileName(item));
             }
-            Console.ReadKey();
+
+           
         }
     }
 }
