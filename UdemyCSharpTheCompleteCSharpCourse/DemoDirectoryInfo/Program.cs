@@ -12,6 +12,7 @@ namespace DemoDirectoryInfo
         static void Main(string[] args)
         {
             string path = @"E:\images";
+            // read folder, read file in folder, not folder root
             DirectoryInfo directoryInfo = new DirectoryInfo(path);
             var x = directoryInfo.GetDirectories();
             foreach (var item in x)
