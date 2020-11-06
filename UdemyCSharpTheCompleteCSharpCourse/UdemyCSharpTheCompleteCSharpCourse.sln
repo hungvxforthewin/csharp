@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoDirectoryInfo", "DemoDi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoFileInfo", "DemoFileInfo\DemoFileInfo.csproj", "{FDE36CA5-868F-4A8E-910F-560E9F914379}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoFile", "DemoFile\DemoFile.csproj", "{FECCB83F-43FE-4D37-87F0-BC4DFE555CED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -90,6 +92,10 @@ Global
 		{FDE36CA5-868F-4A8E-910F-560E9F914379}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDE36CA5-868F-4A8E-910F-560E9F914379}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDE36CA5-868F-4A8E-910F-560E9F914379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FECCB83F-43FE-4D37-87F0-BC4DFE555CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FECCB83F-43FE-4D37-87F0-BC4DFE555CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FECCB83F-43FE-4D37-87F0-BC4DFE555CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FECCB83F-43FE-4D37-87F0-BC4DFE555CED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,6 +110,7 @@ Global
 		{28F54369-91B7-4ECA-B14A-5B6EE706ECB4} = {B434942D-B5A6-418B-B017-EDC3FC28CA0E}
 		{DC90F17D-0007-48AE-B619-7FDFCBD54014} = {B434942D-B5A6-418B-B017-EDC3FC28CA0E}
 		{FDE36CA5-868F-4A8E-910F-560E9F914379} = {B434942D-B5A6-418B-B017-EDC3FC28CA0E}
+		{FECCB83F-43FE-4D37-87F0-BC4DFE555CED} = {B434942D-B5A6-418B-B017-EDC3FC28CA0E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EED99B88-C911-4186-B757-7B226D867C6A}
