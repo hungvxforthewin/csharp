@@ -104,7 +104,17 @@ namespace DemoFileInfo
             }
             // nếu ko có folder2 thì phải tạo, tạo folder cha, nếu tạo sẵn bằng tay rồi thì ko cần tạo nữa
             // gọi là folder cha thì có thể chứa nhiều folder
-            fl8.Directory.Create();
+            // check folder mới có tồn tại hay không thì sử dụng đên DirectoryInfo
+            var nameFolder = fl8.Directory.ToString();
+            DirectoryInfo directoryInfo = new DirectoryInfo(nameFolder);
+            if (directoryInfo.Exists)
+            {
+                Console.WriteLine(directoryInfo.FullName + " exists");
+            }
+            else
+            {
+                fl8.Directory.Create();
+            }           
             fl7.MoveTo(fl8.FullName);
             fl8.Refresh();
             if (fl8.Exists)
