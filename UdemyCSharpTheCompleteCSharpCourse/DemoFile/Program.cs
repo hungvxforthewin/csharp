@@ -75,11 +75,32 @@ namespace DemoFile
             // using FileInfo
             FileInfo fileInfo = new FileInfo(path04);
             FileInfo fileInfoTo = new FileInfo(path05);
+            // using File
+            if (!File.Exists(path04))
+            {
+                Console.WriteLine(fileInfo.FullName + "not exists");
+                File.Create(path04);
+            }
+            else
+            {
+                Console.WriteLine(fileInfo.FullName + " exists");
+                //Console.ReadKey();
+                //return;
+            }
             // using Directory
-            DirectoryInfo directoryInfo = new DirectoryInfo(path05);
+            if (Directory.Exists(fileInfoTo.Directory.ToString()))
+            {
+                Console.WriteLine("File move exists");
+                Console.ReadKey();
+                return;
+            }
+            // using DirectoryInfo
+            DirectoryInfo directoryInfo = new DirectoryInfo(fileInfoTo.Directory.ToString());// Hiểu cả test.txt là 1 folder
             if (directoryInfo.Exists)
             {
-                Console.WriteLine(directoryInfo.FullName + "exists");
+                Console.WriteLine(directoryInfo.FullName + " exists");
+                Console.ReadKey();
+                return;
             }
             else
             {
