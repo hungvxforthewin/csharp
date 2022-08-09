@@ -1,0 +1,52 @@
+1) What is ASP.NET MVC?
+
+    ASP.NET MVC is a web application Framework. It is light weight and highly testable Framework. 
+    MVC separates application into three components — Model, View and Controller.
+
+2) Can you explain Model, Controller and View in MVC?
+
+    Model — It’s a business entity and it is used to represent the application data
+    Controller — Request sent by the user always scatters through controller and it’s responsibility is to redirect to the specific view using View() method.
+    View — It’s the presentation layer of MVC.
+
+3)Explain the new features added in version 4 of MVC (MVC4)?
+
+    Following are features added newly –
+
+    →Asynchronous controller task support.
+
+    →Bundling the java scripts.
+
+    →Segregating the configs for MVC routing, Web API, Bundle etc.
+
+    →Mobile templates
+
+    →Added ASP.NET Web API template for creating REST based services.
+
+    →Asynchronous controller task support.
+
+    →Bundling the java scripts.
+
+    →Segregating the configs for MVC routing, Web API, Bundle etc.
+
+4)Can you explain the page life cycle of MVC?
+
+    →App initialization
+
+    →Routing
+
+    →Instantiate and execute controller
+
+    →Locate and invoke controller action
+
+    →Instantiate and render view.
+
+5) What are the advantages of MVC over ASP.NET?
+
+    →Provides a clean separation of concerns among UI (Presentation layer), model (Transfer objects/Domain Objects/Entities) and Business Logic (Controller).
+
+    →Easy to UNIT Test.
+
+    →Improved reusability of model and views. We can have multiple views which can point to the same model and vice versa.
+
+    →Improved structuring of the code.
