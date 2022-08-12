@@ -11,6 +11,8 @@ namespace objectDynamicVar
             //a1 = 10;
             // ngầm hiểu implicit là string type, sử dụng đc các method
             // ko assign value lần nữa
+            int lent = a1.Length;
+            System.Console.WriteLine(lent);
 
             object a2 = "hello, world";
             a2 = 10;
@@ -20,6 +22,10 @@ namespace objectDynamicVar
             // assign value lần nữa
 
             dynamic a3 = "hello, world";
+            int lentA3 = a3.Length;
+            System.Console.WriteLine(lentA3);
+            // dynamic ko check lỗi khi compiler time
+            // sử dụng đc các method nhưng sẽ check khi runtime
         }
     }
 }
