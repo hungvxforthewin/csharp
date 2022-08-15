@@ -27,6 +27,8 @@ namespace OverloadingOverride
     {
         public override void soundAnimal()
         {
+            // gọi lại func ở base
+            // fix version dotnet ở global.json, .csproj (sửa lại version dotnet đã install)
             base.soundAnimal();
             System.Console.WriteLine("Gau Gau");
         }
