@@ -20,6 +20,33 @@ namespace StaticDemo
             var result = Calculator.Sum(10, 25); // calling static method
             Calculator.Store(result); 
             System.Console.WriteLine(Calculator._resultStorage);
+
+            // class non-static
+            //
+            // Read the static properties.
+            //
+            Console.WriteLine(NonCalculator.DayNumber);
+            Console.WriteLine(NonCalculator.DayName);
+            //
+            // Change the value of the static bool property.
+            //
+            NonCalculator.Finished = true;
+            Console.WriteLine(NonCalculator.Finished);
+
+            // static property
+
+            NonCalculator nonObj = new NonCalculator();
+            NonCalculator.Name = "HungVX";
+            System.Console.WriteLine(NonCalculator.Name);
+
+            // static field
+            StopWatch sw1 = new StopWatch();
+            StopWatch sw2 = new StopWatch();
+            Console.WriteLine(StopWatch.NoOfInstances); //2 
+                
+            StopWatch sw3 = new StopWatch();
+            StopWatch sw4 = new StopWatch();
+            Console.WriteLine(StopWatch.NoOfInstances);//4
         }
     }
 
@@ -51,4 +78,80 @@ namespace StaticDemo
             _resultStorage = result;
         }
     }
+
+    // class non-static
+    public class NonCalculator
+    {
+        // static cannot be accessed with an instance reference
+        // public NonCalculator(string name)
+        // {
+        //     this.name = name;
+        //     Count++;
+        // }
+        // static method
+        static void display()
+        {
+            // staff
+        }
+
+        // static field 
+        static int age = 10;
+        private static string name;
+        // static property
+
+        public static string Name
+        {
+            get
+            {
+                return name; // not this.name
+            }
+            set
+            {
+                name = value;
+            }
+        }
+
+        public static int Count
+        {
+            get;
+            private set;
+        }
+        public static int DayNumber
+        {
+            get
+            {
+                return DateTime.Today.Day;
+            }
+        }
+
+        public static string DayName
+        {
+            get
+            {
+                return DateTime.Today.DayOfWeek.ToString();
+            }
+        }
+
+        public static bool Finished
+        {
+            get;
+            set;
+        }
+
+    }    
+
+    // static field
+    public class StopWatch
+    {
+        public static int NoOfInstances = 0;
+        
+        // instance constructor
+        public StopWatch()
+        {
+            StopWatch.NoOfInstances++;
+        }
+    }
+
+    // static method
+    // static constructor
 }
