@@ -16,6 +16,10 @@ namespace StaticDemo
             // Các static properties được sử dụng để set và get giá trị cho các giá trị của biến static trong class
             // Static constructor không thể có tham số, Không thể áp dụng các access modifiers cho static constructor,  luôn có một default constructor public để khởi tạo các biến static cho class
 
+            // call class static
+            var result = Calculator.Sum(10, 25); // calling static method
+            Calculator.Store(result); 
+            System.Console.WriteLine(Calculator._resultStorage);
         }
     }
 
@@ -27,6 +31,24 @@ namespace StaticDemo
         {
             Console.WriteLine(X);
             //Console.WriteLine(Y); //lỗi bởi vì static method chỉ truy cập được biến static
+        }
+    }
+
+    // class static
+    public static class Calculator
+    {
+        public static int _resultStorage = 0;
+        
+        public static string Type = "Arithmetic";
+
+        public static int Sum(int num1, int num2)
+        {
+            return num1 + num2;
+        }
+
+        public static void Store(int result)
+        {
+            _resultStorage = result;
         }
     }
 }
