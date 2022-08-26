@@ -15,11 +15,28 @@ namespace demo
             int? yesNull = null;
             Nullable num = null;
             //string text = null;
-            string text = "Hello world!";
-            PassNullReference(text); 
+            //string text = "Hello world!";
+            //string? text = null;
+            int? goal = null;
+            PassNullReference2(goal.Value.ToString()); 
         }
-        public static void PassNullReference (string str){
-            Console.WriteLine("The first char is " + str[0]);
+        public static void PassNullReference (string str)
+        {
+            if(str != null)
+            {
+                Console.WriteLine("The first char is " + str[0]);
+            }
+        }
+        public static void PassNullReference2 (string str)
+        {
+            if(str != null)
+            {
+                Console.WriteLine("The first char is " + str[0]);
+            }
+            else
+            {
+                System.Console.WriteLine("Nullable");
+            }
         }
     }
 }
